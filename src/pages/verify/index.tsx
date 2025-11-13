@@ -67,7 +67,7 @@ const Verify = (props: Props) => {
                     alt={isError ? "error" : "success"}
                     width={140}
                     height={360}
-                    className={styles.result_img}
+                    className={isError?  styles.result_img_err : styles.result_img}
                 />
                 <div className={styles.result_text}>
                     {isError ? t('errorMessage') : t('checkMessage')}
@@ -157,7 +157,7 @@ const Verify = (props: Props) => {
                     </div>
                 }
 
-                <div className={styles.result_des} style={{ marginTop: isError ? '60px' : '30px' }}>
+                <div className={styles.result_des}>
                     {isError ? t('errorDes') : t('checkDes')}
                 </div>
             </div>
