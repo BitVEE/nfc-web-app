@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image'
 
 import getLocaleProps from '@/utils/getLocaleProps';
-import styles from './Verify.module.scss'
+import styles from './verify.module.scss'
 
 type Props = {};
 
