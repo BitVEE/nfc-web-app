@@ -1,61 +1,227 @@
-.start_page {
+.home {
   width: 100%;
-  height: 100%;
+  margin-top: 220px;
 
-  .start_page_bg {
+  .home_olive {
     width: 100%;
-    height: 68vh;
-    background: url('/images/bgi.png') no-repeat 100% bottom;
-    // border: 1px solid #000000;
-
-    .start_page_logo {
-      width: 320px;
-      height: 380px;
-      object-fit: cover;
-      margin: 130px 0 0 120px;
-    }
-
-    .start_page_text {
-      font-weight: 600;
-      font-size: 140px;
-      color: #FFFFFF;
-      line-height: 125%;
-      margin: 200px 0 0 120px;
-    }
-  }
-
-  .start_page_footer {
-    width: 100%;
+    min-height: 2550px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.45) 100%), url('/images/home-olive.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 190px;
-    margin-bottom: 100px;
+    // border: 1px solid red;
 
-    .start_btn {
-      width: 80%;
-      height: 170px;
+    .home_olive_title {
+      width: 90%;
+      min-height: 450px;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 180px;
+      line-height: 120%;
+      letter-spacing: 0%;
+      color: #DDDDDD;
+      margin: 150px 0 60px 0;
+
+    }
+
+    .home_olive_des {
+      width: 90%;
+      height: 350px;
+      font-family: 'Lato';
+      font-weight: 275;
+      font-style: ExtraLight;
+      font-size: 72px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      color: #E2E4E7;
+
+    }
+
+    .home_olive_img_box {
+      width: 90%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      margin-top: 100px;
+
+      .home_olive_img_item {
+        width: 33.3%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        font-family: 'Lato';
+        font-weight: 400;
+        font-style: Regular;
+        font-size: 30px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        color: #DDDDDD;
+        text-align: center;
+        margin-bottom: 60px;
+
+        .home_olive_img {
+          width: 150px;
+          height: 150px;
+          margin-bottom: 24px;
+        }
+      }
+    }
+
+    .home_olive_check_btn {
+      width: 600px;
+      height: 130px;
       opacity: 1;
-      gap: 16px;
-      border-radius: 24px;
-      background-color: #0B4915;
-      color: #FFFFFF;
       font-weight: 600;
-      font-size: 60px;
+      font-style: SemiBold;
+      border-radius: 36px;
+      font-size: 50px;
+      line-height: 21px;
+      letter-spacing: -0.32%;
+      vertical-align: middle;
+      color: #202020;
+      background-color: #DDDDDD;
       display: flex;
       align-items: center;
       justify-content: center;
+      margin-top: 120px;
     }
 
-    .copyright {
+    .home_olive_sponser_box {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 200px;
+      margin-bottom: 100px;
+
+      .home_olive_sponser_cyberport {
+        width: 250px;
+        height: 130px;
+      }
+
+      .home_olive_sponser_eth {
+        width: 100px;
+        height: 150px;
+      }
+
+      .home_olive_sponser_fintech {
+        width: 300px;
+        height: 130px;
+      }
+
+      .home_olive_sponser_codeSolution {
+        width: 380px;
+        height: 150px;
+      }
+    }
+
+  }
+
+  .home_footer {
+    width: 100%;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #DDDDDD;
+    padding-bottom: 200px;
+
+    .home_footer_logo_box {
+      width: 90%;
+      margin-top: 120px;
+
+      .home_footer_logo {
+        width: 120px;
+        height: 150px;
+        margin-bottom: 16px;
+      }
+    }
+
+    .home_footer_company {
+      width: 90%;
+      font-weight: 1000;
+      font-style: Medium;
+      font-size: 60px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-top: 72px;
+    }
+
+    .home_footer_number {
+      width: 90%;
+      font-family: 'Lato';
       font-weight: 400;
+      font-style: Regular;
+      font-size: 50px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-top: 40px;
+    }
+
+    .home_footer_address {
+      width: 90%;
+      font-family: 'Lato';
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 50px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      text-transform: uppercase;
+      margin-top: 140px;
+
+    }
+
+    .home_footer_divider {
+      width: 100%;
+      height: 3px;
+      background-color: #DDDDDD;
+      margin-top: 150px;
+    }
+
+
+    .home_footer_contact {
+      width: 90%;
+      font-family: 'Lato';
+      font-weight: 500;
+      font-style: Medium;
+      font-size: 60px;
+      line-height: 100%;
+      letter-spacing: 0%;
+      text-transform: capitalize;
+      margin-top: 150px;
+    }
+
+
+    .home_footer_about {
+      width: 90%;
+      font-weight: 400;
+      font-style: Regular;
       font-size: 50px;
       line-height: 150%;
       letter-spacing: -0.32%;
-      text-align: center;
-      vertical-align: middle;
-      margin-top: 42px;
-      color: #202020;
+      text-transform: capitalize;
+      margin-top: 130px;
     }
+
+    .home_footer_rights{
+      width: 90%;
+      font-weight: 400;
+      font-style: Regular;
+      font-size: 50px;
+      line-height: 100%;
+      letter-spacing: -0.32%;
+      text-transform: capitalize;
+      margin-top: 20px;
+    }
+
   }
+
+
+
 }

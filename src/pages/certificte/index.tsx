@@ -4,25 +4,14 @@ import { useEffect, useState } from 'react';
 import Image from 'next/image'
 
 import getLocaleProps from '@/utils/getLocaleProps';
-import styles from './verify.module.scss'
+import styles from './Certificate.module.scss'
 
 type Props = {};
 
 const Verify = (props: Props) => {
     const router = useRouter()
-    const { t, i18n } = useTranslation('common', { keyPrefix: "common" })
+    const { t } = useTranslation('common', { keyPrefix: "common" })
     const [id, setId] = useState<string | string[] | undefined>(undefined);
-
-    const handleLanguageChange = () => {
-        router.push({
-            pathname: router.pathname,
-            query: {
-                ...router.query,
-            }
-        }, router.asPath, {
-            locale: i18n.language === 'en' ? 'zh' : 'en',
-        });
-    };
 
     const share = () => {
         try {
@@ -75,35 +64,7 @@ const Verify = (props: Props) => {
     }, [router.query]);
 
     return (
-        <div className={styles.verify}>
-            <div className={styles.header_box}>
-                <div className={styles.header}>
-                    <Image
-                        src="/favicon.ico"
-                        alt="RWA OLIVE OIL"
-                        width={42}
-                        height={49}
-                        className={styles.logo}
-                        onClick={() => router.push('/')}
-                    />
-                    <div className={styles.title_box}>
-                        <div className={styles.title}>
-                            Caiyunzhilan Olive Oil
-                        </div>
-                        <div className={styles.subtitle}>
-                            Blockchain Traceability & Asset Tokenization Platform
-                        </div>
-                    </div>
-                    <Image
-                        src="/icons/language.svg"
-                        alt="language"
-                        width={24}
-                        height={24}
-                        className={styles.lag}
-                        onClick={() => handleLanguageChange()}
-                    />
-                </div>
-            </div>
+        <div className={styles.certificate}>
 
             <div className={styles.content}>
                 <div className={styles.certificte_title}>

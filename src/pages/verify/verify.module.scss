@@ -1,61 +1,7 @@
 .verify {
     width: 100%;
+  margin-top: 220px;
 
-    .header_box {
-        width: 100%;
-        display: flex;
-        justify-content: center;
-        border-bottom: 3px solid #E2E4E7;
-        padding-bottom: 10px;
-
-        .header {
-            width: 93%;
-            height: 210px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            font-weight: 600;
-            font-size: 50px;
-            color: #202020;
-
-            .logo {
-                width: 126px;
-                height: 150px;
-                margin-right: 40px;
-            }
-
-            .title_box {
-                display: flex;
-                flex-direction: column;
-                justify-content: center;
-
-                .title {
-                    font-weight: 500;
-                    font-size: 50px;
-                    color: #202020;
-                    font-family: 'Playfair';
-                }
-
-                .subtitle {
-                    font-weight: 300;
-                    font-size: 30px;
-                    color: #606060;
-                    font-family: 'Lato';
-                    margin-top: 8px;
-                }
-            }
-
-            .lag {
-                width: 80px;
-                height: 80px;
-                margin-left: auto;
-                font-weight: 400;
-                font-size: 30px;
-                color: #202020;
-                cursor: pointer;
-            }
-        }
-    }
 
     .content {
         width: 100%;

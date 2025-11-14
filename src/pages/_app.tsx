@@ -2,10 +2,14 @@ import '@/styles/globals.css'
 import type { AppProps } from 'next/app'
 import { appWithTranslation } from "next-i18next";
 import Head from 'next/head';
+import { useRouter } from 'next/router';
 
+import Header from '@/components/Header';
 import nextI18NextConfig from "../../next-i18next.config"
 
 function App({ Component, pageProps }: AppProps) {
+  const { route } = useRouter()
+
   return (
     <>
       <Head>
@@ -15,6 +19,9 @@ function App({ Component, pageProps }: AppProps) {
         <meta name="keywords" content="rwa olive oil"></meta>
         <link rel="icon" href="/favicon.png" />
       </Head>
+      {
+        route != '/start' && <Header />
+      }
       <Component {...pageProps} />
     </>
   )

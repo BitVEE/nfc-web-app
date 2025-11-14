@@ -35,5 +35,21 @@
         "copySuccess": "复制证书链接成功，快去分享吧！",
         "shareSuccess": "快来查看彩云之南橄榄油的数字证书吧！",
         "scanNFC": "请扫描NFC标签！"
+    },
+    "home": {
+        "oliveTitle": "从果树到\n餐桌",
+        "oliveDes": "可信品质，\n可投资产",
+        "iconsTitle1": "甄选橄榄果",
+        "iconsTitle2": "24小时即时冷榨",
+        "iconsTitle3": "物理低温冷榨",
+        "iconsTitle4": "只采用第一道橄榄油",
+        "iconsTitle5": "无化学添加剂",
+        "iconsTitle6": "品质包装",
+        "checkData": "查看溯源详情",
+        "footerCompany": "彩雲之蘭橄欖油",
+        "footerAddress": "雲南省昆明市\n中華人民共和國",
+        "footerContact": "聯絡我們",
+        "footerAbout": "关于彩雲之蘭",
+        "footerRights": "© 2025 Caiyunzhilan All Rights Reserved"
     }
 }

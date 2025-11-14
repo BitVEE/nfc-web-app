@@ -35,5 +35,21 @@
         "copySuccess": "Certificate link copied! Share it with your friends!",
         "shareSuccess": "Check out the certificate for Caiyunzhilan Olive Oil!",
         "scanNFC": "Please scan the NFC tag!"
+    },
+    "home": {
+        "oliveTitle": "From\nTree to \nTable",
+        "oliveDes": "Blockchain Traceability &\n Asset Tokenization \nPlatform",
+        "iconsTitle1": "Hand-Selected \nOlives",
+        "iconsTitle2": "Cold-Pressed \nWithin 24 Hours",
+        "iconsTitle3": "Mechanical \n Cold-Pressed",
+        "iconsTitle4": "First-Press \n Only",
+        "iconsTitle5": "No Chemical \n Additives",
+        "iconsTitle6": "Quality \n Packaging",
+        "checkData": "Check the data",
+        "footerCompany": "Caiyunzhilan Olive Oil",
+        "footerAddress": "Kunming, Yunnan Province\nPeople's Republic of China",
+        "footerContact": "Contact us",
+        "footerAbout": "About Caiyunzhilan",
+        "footerRights": "© 2025 Caiyunzhilan All Rights Reserved"
     }
 }
