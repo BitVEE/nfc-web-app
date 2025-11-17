@@ -145,7 +145,7 @@ const Verify = (props: Props) => {
             <div className={styles.start_page_footer}>
                 <div className={styles.start_btn} onClick={() => share()}>{t('share')}</div>
                 <div className={styles.copyright}>
-                    <div>{t('about') + ' ' + t('companyName')} </div>
+                    <div onClick={() => router.push('/')}>{t('about') + ' ' + t('companyName')} </div>
                     <div>© 2025 Caiyunzhinan All Rights Reserved</div>
                 </div>
             </div>
