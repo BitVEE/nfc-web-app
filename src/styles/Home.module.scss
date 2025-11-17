@@ -11,7 +11,6 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    // border: 1px solid red;
 
     .home_olive_title {
       width: 90%;
@@ -121,6 +120,356 @@
 
   }
 
+  .home_proof {
+    width: 100%;
+    min-height: 2650px;
+    background: url('/images/lag-bg.png') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+
+    .home_proof_title {
+      width: 90%;
+      font-weight: 300;
+      font-style: Light;
+      font-size: 110px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      margin-top: 240px;
+    }
+
+    .home_proof_subtitle {
+      width: 90%;
+      font-family: 'Lato';
+      font-weight: 275;
+      font-size: 80px;
+      line-height: 130%;
+      margin: 24px 0 80px 0;
+    }
+
+    .home_proof_des {
+      width: 90%;
+      font-family: 'Lato';
+      font-weight: 300;
+      font-style: Light;
+      font-size: 40px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      margin-bottom: 18px;
+    }
+
+    .home_proof_card {
+      width: 90%;
+      height: 1200px;
+      gap: 16px;
+      opacity: 1;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-radius: 36px;
+      background: #FFFFFF33;
+      backdrop-filter: blur(10px);
+      margin-top: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .home_proof_card_item {
+        width: 90%;
+        margin-top: 72px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .home_proof_card_item_title_box {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-bottom: 48px;
+
+          .home_proof_card_item_title {
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 48px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            white-space: nowrap;
+            flex-shrink: 0;
+            margin-right: 60px;
+          }
+
+          .home_proof_card_item_title_divider {
+            flex: 1;
+            height: 3px;
+            background: #FFFFFF40;
+          }
+        }
+
+        .home_proof_card_item_unit_box {
+          width: 80%;
+          display: flex;
+          align-items: center;
+          margin-top: 26px;
+
+          .home_proof_card_item_unit_img {
+            width: 60px;
+            height: 60px;
+            margin-right: 24px;
+          }
+
+          .home_proof_card_item_unit {
+            font-family: 'Lato';
+            font-weight: 300;
+            font-style: Light;
+            font-size: 48px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+
+          }
+
+          .home_proof_card_item_num {
+            font-family: 'Lato';
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 48px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+          }
+        }
+      }
+    }
+
+  }
+
+  .home_orchards {
+    width: 100%;
+    min-height: 2150px;
+    background: url('/images/home-orchards.png') no-repeat center bottom / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+    position: relative;
+
+    .home_orchards_card {
+      width: 90%;
+      height: 650px;
+      gap: 9px;
+      opacity: 1;
+      border-radius: 36px;
+      padding: 48px;
+      background: #FFFFFF66;
+      color: #202020;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      margin-top: 180px;
+
+      .home_orchards_card_title {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 80px;
+        line-height: 100%;
+        letter-spacing: 0%;
+        margin-top: 68px;
+      }
+
+      .home_orchards_card_des {
+        font-family: 'Lato';
+        font-weight: 300;
+        font-style: Light;
+        font-size: 40px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        margin-top: 58px;
+      }
+    }
+
+    .home_orchards_mechanical_img {
+      width: 140px;
+      height: 140px;
+    }
+
+    .home_orchards_mechanical {
+      position: absolute;
+      top: 1350px;
+      left: 110px;
+
+    }
+
+    .home_orchards_tree {
+      position: absolute;
+      top: 1250px;
+      right: 100px;
+    }
+
+    .home_orchards_cold {
+      position: absolute;
+      top: 1650px;
+      left: 400px;
+    }
+
+    .home_orchards_olive {
+      position: absolute;
+      top: 1900px;
+      left: 750px;
+    }
+
+    .home_orchards_press {
+      position: absolute;
+      top: 1650px;
+      right: 150px;
+    }
+
+  }
+
+
+  .home_tree {
+    width: 100%;
+    min-height: 2650px;
+    background: url('/images/home-tree.png') no-repeat center center / cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: #FFFFFF;
+
+    .home_tree_title {
+      width: 90%;
+      font-weight: 300;
+      font-style: Light;
+      font-size: 110px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      margin-top: 240px;
+    }
+
+    .home_tree_des {
+      width: 90%;
+      font-family: 'Lato';
+      font-weight: 300;
+      font-style: Light;
+      font-size: 40px;
+      line-height: 150%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      margin-top: 50px;
+    }
+
+    .home_tree_card {
+      width: 90%;
+      height: 1700px;
+      gap: 16px;
+      opacity: 1;
+      padding-top: 24px;
+      padding-bottom: 24px;
+      border-radius: 36px;
+      background: #202020CC;
+      backdrop-filter: blur(10px);
+      margin-top: 110px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      .home_tree_card_title_box {
+        width: 95%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        .home_tree_card_title_item {
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          padding: 10px 25px;
+          margin-top: 20px;
+
+
+          .home_tree_card_title_item_img {
+            width: 80px;
+            height: 80px;
+            margin-right: 24px;
+          }
+
+          .home_tree_card_title_item_txt_box {
+            font-family: 'Lato';
+            font-size: 35px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            vertical-align: middle;
+            color: #DDDDDD;
+
+            .home_tree_card_title_item_txt_bold {
+              font-weight: 700;
+              font-style: Bold;
+            }
+
+            .home_tree_card_title_item_txt_light {
+              font-weight: 300;
+              font-style: Light;
+
+            }
+          }
+        }
+      }
+
+      .home_tree_card_info_box {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .home_tree_card_info_item {
+          width: 100%;
+          display: flex;
+          align-items: center;
+          justify-content: space-between;
+          margin-top: 50px;
+
+          .home_tree_card_info_item_title {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            font-family: 'Lato';
+            font-size: 35px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #DDDDDD;
+            font-weight: 300;
+            font-style: Light;
+            text-align: center;
+            vertical-align: middle;
+
+
+            .home_tree_card_info_item_title_img {
+              width: 48px;
+              height: 48px;
+              margin-right: 24px;
+            }
+          }
+
+          .home_tree_card_info_item_val {
+            font-family: 'Lato';
+            font-weight: 700;
+            font-style: Bold;
+            font-size: 30px;
+            line-height: 150%;
+            letter-spacing: 0%;
+            color: #FFFFFF;
+          }
+        }
+      }
+    }
+  }
+
+
   .home_footer {
     width: 100%;
     background-color: #202020;
@@ -209,7 +558,7 @@
       margin-top: 130px;
     }
 
-    .home_footer_rights{
+    .home_footer_rights {
       width: 90%;
       font-weight: 400;
       font-style: Regular;
