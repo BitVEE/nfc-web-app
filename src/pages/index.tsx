@@ -1,13 +1,19 @@
 import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
 import { useEffect, useState } from 'react';
-import getLocaleProps from "@/utils/getLocaleProps";
+import dynamic from 'next/dynamic';
 
+import getLocaleProps from "@/utils/getLocaleProps";
 import styles from '@/styles/Home.module.scss'
+
+const Mask = dynamic(() => import('antd-mobile').then(mod => mod.Mask), { ssr: false });
+// const Swiper = dynamic(() => import('antd-mobile').then(mod => mod.Swiper), { ssr: false });
+// const SwiperItem = dynamic(() => import('antd-mobile').then(mod => mod.Swiper.Item), { ssr: false });
 
 export default function Home() {
   const { t } = useTranslation('common', { keyPrefix: "home" })
   const [selectedOrigin, setSelectedOrigin] = useState<string>('yuxi');
+  const [visible, setVisible] = useState(false)
 
   return (
     <div className={styles.home}>
@@ -125,21 +131,21 @@ export default function Home() {
           <div className={styles.home_orchards_card_title}>{t('orchardsTitle')} </div>
           <div className={styles.home_orchards_card_des}>{t('orchardsDes')} </div>
         </div>
-        <div className={styles.home_orchards_mechanical}>
+        <div className={styles.home_orchards_mechanical} onClick={() => setVisible(true)}>
           <Image className={styles.home_orchards_mechanical_img} src='/icons/orchards-mechanical.png' alt='mechanical' width={36} height={36} />
         </div>
-        <div className={styles.home_orchards_tree}>
+        <div className={styles.home_orchards_tree} onClick={() => setVisible(true)}>
           <Image className={styles.home_orchards_mechanical_img} src='/icons/orchards-tree.png' alt='tree' width={36} height={36} />
         </div>
-        <div className={styles.home_orchards_cold}>
+        <div className={styles.home_orchards_cold} onClick={() => setVisible(true)}>
           <Image className={styles.home_orchards_mechanical_img} src='/icons/orchards-cold.png' alt='cold' width={36} height={36} />
         </div>
 
-        <div className={styles.home_orchards_olive}>
+        <div className={styles.home_orchards_olive} onClick={() => setVisible(true)}>
           <Image className={styles.home_orchards_mechanical_img} src='/icons/orchards-cold.png' alt='cold' width={36} height={36} />
         </div>
 
-        <div className={styles.home_orchards_press}>
+        <div className={styles.home_orchards_press} onClick={() => setVisible(true)}>
           <Image className={styles.home_orchards_mechanical_img} src='/icons/orchards-tree.png' alt='cold' width={36} height={36} />
         </div>
       </div>
@@ -297,7 +303,7 @@ export default function Home() {
                 {t('treeCurrentLocationDate')}
               </div>
               <div className={styles.home_tree_card_info_item_val}>
-                {t('place1')}
+                {t(selectedOrigin === 'yuxi' ? 'place1' : (selectedOrigin === 'Kunming' ? 'place3' : 'place2'))}
               </div>
             </div>
 
@@ -336,6 +342,47 @@ export default function Home() {
         </div>
       </div>
 
+      <div className={styles.home_enterprise}>
+
+        <div className={styles.home_enterprise_title}>
+          {t('enterpriseTitle')}
+        </div>
+        <div className={styles.home_enterprise_des}>
+          {t('enterpriseDes')}
+        </div>
+        {/* <Swiper slideSize={80} trackOffset={10} stuckAtBoundary={false}>
+          <Swiper.Item>
+            <div className={styles.content} style={{ background: 'red', width: '400px', height: '200px' }}>
+              {1}
+            </div>
+          </Swiper.Item>
+        </Swiper> */}
+      </div>
+
+      <div className={styles.home_block}>
+        <div className={styles.home_block_title}>
+          {t('blockchainTitle')}
+        </div>
+        <div className={styles.home_block_description}>
+          {t('blockchainDes')}
+        </div>
+        <div className={styles.home_block_sub_box}>
+          <div className={styles.home_block_sub_item}>
+            <Image className={styles.home_block_sub_img} src='/icons/net.svg' alt='blockchain-1' width={80} height={80} />
+            <div className={styles.home_block_sub_text}>
+              {t('blockchainSubtitle1')}
+            </div>
+          </div>
+
+          <div className={styles.home_block_sub_item}>
+            <Image className={styles.home_block_sub_img} src='/icons/blockchain.svg' alt='blockchain-1' width={80} height={80} />
+            <div className={styles.home_block_sub_text}>
+              {t('blockchainSubtitle2')}
+            </div>
+          </div>
+        </div>
+      </div>
+
       <div className={styles.home_footer}>
         <div className={styles.home_footer_logo_box}>
           <Image className={styles.home_footer_logo} src='/favicon.png' alt='logo' width={42} height={49} />
@@ -363,6 +410,39 @@ export default function Home() {
           {t('footerRights')}
         </div>
       </div>
+
+      <Mask visible={visible} onMaskClick={() => setVisible(false)} color='#202020E5'>
+        <div className={styles.overlayContent}>
+          <Image className={styles.overlayContent_img} src='/images/tree-img.png' alt='orchards' width={300} height={400} />
+          <div className={styles.overlayContent_form}>
+            <div className={styles.overlayContent_form_title}>
+              {t('orchardsCardUnit1')}
+            </div>
+            <div className={styles.overlayContent_form_val}>
+              100000
+            </div>
+          </div>
+
+          <div className={styles.overlayContent_form}>
+            <div className={styles.overlayContent_form_title}>
+              {t('orchardsCardUnit2')}
+            </div>
+            <div className={styles.overlayContent_form_val}>
+              12
+            </div>
+          </div>
+
+          <div className={styles.overlayContent_form}>
+            <div className={styles.overlayContent_form_title}>
+              {t('orchardsCardUnit3')}
+            </div>
+            <div className={styles.overlayContent_form_val}>
+              {t('treeMainCultivar')}
+            </div>
+          </div>
+          <Image className={styles.overlayContent_close} src='/icons/close-img.svg' alt='close' width={40} height={40} onClick={() => setVisible(false)} />
+        </div>
+      </Mask>
     </div>
   )
 }

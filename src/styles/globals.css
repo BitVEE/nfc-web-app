@@ -18,10 +18,9 @@ body {
   margin: 0;
   width: 100vw;
   overflow-x: hidden;
-  /* 隐藏滚动条 */
   scrollbar-width: none;
   -ms-overflow-style: none;
-  font-family: "Playfair";
+  font-family: "Playfair" !important;
   white-space: pre-wrap;
 }
 

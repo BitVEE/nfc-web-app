@@ -40,7 +40,7 @@ const popupDesBoxStyle: CSSProperties = {
     display: 'flex',
     alignItems: 'center',
     marginTop: '28px',
-    fontFamily: 'Lato',
+    fontFamily: 'Lato !important',
     fontWeight: '500',
     lineHeight: '100%',
     fontSize: '14px'

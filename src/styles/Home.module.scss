@@ -28,7 +28,7 @@
     .home_olive_des {
       width: 90%;
       height: 350px;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 275;
       font-style: ExtraLight;
       font-size: 72px;
@@ -52,7 +52,7 @@
         display: flex;
         flex-direction: column;
         align-items: center;
-        font-family: 'Lato';
+        font-family: 'Lato' !important;
         font-weight: 400;
         font-style: Regular;
         font-size: 30px;
@@ -141,7 +141,7 @@
 
     .home_proof_subtitle {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 275;
       font-size: 80px;
       line-height: 130%;
@@ -150,7 +150,7 @@
 
     .home_proof_des {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 300;
       font-style: Light;
       font-size: 40px;
@@ -221,7 +221,7 @@
           }
 
           .home_proof_card_item_unit {
-            font-family: 'Lato';
+            font-family: 'Lato' !important;
             font-weight: 300;
             font-style: Light;
             font-size: 48px;
@@ -232,7 +232,7 @@
           }
 
           .home_proof_card_item_num {
-            font-family: 'Lato';
+            font-family: 'Lato' !important;
             font-weight: 700;
             font-style: Bold;
             font-size: 48px;
@@ -280,7 +280,7 @@
       }
 
       .home_orchards_card_des {
-        font-family: 'Lato';
+        font-family: 'Lato' !important;
         font-weight: 300;
         font-style: Light;
         font-size: 40px;
@@ -351,7 +351,7 @@
 
     .home_tree_des {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 300;
       font-style: Light;
       font-size: 40px;
@@ -397,7 +397,7 @@
           }
 
           .home_tree_card_title_item_txt_box {
-            font-family: 'Lato';
+            font-family: 'Lato' !important;
             font-size: 35px;
             line-height: 150%;
             letter-spacing: 0%;
@@ -437,7 +437,7 @@
             display: flex;
             align-items: center;
             justify-content: space-between;
-            font-family: 'Lato';
+            font-family: 'Lato' !important;
             font-size: 35px;
             line-height: 150%;
             letter-spacing: 0%;
@@ -456,7 +456,7 @@
           }
 
           .home_tree_card_info_item_val {
-            font-family: 'Lato';
+            font-family: 'Lato' !important;
             font-weight: 700;
             font-style: Bold;
             font-size: 30px;
@@ -464,6 +464,106 @@
             letter-spacing: 0%;
             color: #FFFFFF;
           }
+        }
+      }
+    }
+  }
+
+
+  .home_enterprise {
+    width: 100%;
+    height: 2000px;
+    background: url('/images/lag-bg.png') no-repeat center center / cover;
+    color: #DDDDDD;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home_enterprise_title {
+      width: 90%;
+      font-size: 110px;
+      line-height: 200%;
+      letter-spacing: 0%;
+      margin-top: 200px;
+      font-weight: 300;
+      font-style: Light;
+      line-height: 100%;
+    }
+
+    .home_enterprise_des {
+      width: 90%;
+      font-family: 'Lato' !important;
+      font-size: 80px;
+      vertical-align: middle;
+      margin-top: 50px;
+      font-weight: 300;
+      font-style: Light;
+      font-size: 40px;
+      line-height: 150%;
+      letter-spacing: 0%;
+
+    }
+  }
+
+  .home_block {
+    width: 100%;
+    height: 1700px;
+    background: url('/images/home-block.png') no-repeat center center / cover;
+    color: #202020;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .home_block_title {
+      width: 90%;
+      font-weight: 400;
+      font-style: Light;
+      font-size: 110px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      margin-top: 240px;
+    }
+
+    .home_block_description {
+      width: 90%;
+      font-family: 'Lato' !important;
+      font-weight: 125;
+      font-style: ExtraLight;
+      font-size: 80px;
+      line-height: 130%;
+      letter-spacing: 0%;
+      vertical-align: middle;
+      margin-top: 50px;
+    }
+
+    .home_block_sub_box {
+      width: 60%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 150px;
+
+      .home_block_sub_item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+
+        .home_block_sub_img {
+          width: 250px;
+          height: 250px;
+          margin-top: 80px;
+        }
+
+        .home_block_sub_text {
+          font-family: 'Lato' !important;
+          font-weight: 400;
+          font-style: Regular;
+          font-size: 40px;
+          letter-spacing: 0%;
+          vertical-align: middle;
+          margin-top: 50px;
+          line-height: 100%;
         }
       }
     }
@@ -503,7 +603,7 @@
 
     .home_footer_number {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 400;
       font-style: Regular;
       font-size: 50px;
@@ -515,7 +615,7 @@
 
     .home_footer_address {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 400;
       font-style: Regular;
       font-size: 50px;
@@ -536,7 +636,7 @@
 
     .home_footer_contact {
       width: 90%;
-      font-family: 'Lato';
+      font-family: 'Lato' !important;
       font-weight: 500;
       font-style: Medium;
       font-size: 60px;
@@ -571,6 +671,66 @@
 
   }
 
+
+  .overlayContent {
+    width: 85%;
+    height: 1930px;
+    margin-top: 320px;
+    margin-left: 7.5%;
+    background-color: #202020;
+    color: #000000;
+    border-radius: 45px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+
+    .overlayContent_close {
+      width: 130px;
+      height: 130px;
+      position: absolute;
+      bottom: -180px;
+      // right: 30px;
+      cursor: pointer;
+    }
+
+    .overlayContent_img {
+      width: 100%;
+      height: 1550px;
+      border-radius: 45px 45px 0 0;
+      object-fit: cover;
+    }
+
+    .overlayContent_form {
+      width: 90%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin-top: 50px;
+
+      .overlayContent_form_title {
+        font-weight: 300;
+        font-style: Light;
+        font-size: 40px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #9A9A9A;
+      }
+
+      .overlayContent_form_val {
+        font-family: 'Lato' !important;
+        font-weight: 300;
+        font-style: Light;
+        font-size: 40px;
+        line-height: 150%;
+        letter-spacing: 0%;
+        vertical-align: middle;
+        color: #DDDDDD;
+      }
+    }
+
+  }
 
 
 }
