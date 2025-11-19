@@ -76,6 +76,7 @@ const Header = (props: Props) => {
         }, router.asPath, {
             locale: lang,
         });
+        setVisible(false)
     };
 
 
