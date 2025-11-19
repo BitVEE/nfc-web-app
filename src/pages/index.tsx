@@ -1,19 +1,20 @@
 import Image from 'next/image'
 import { useTranslation } from 'next-i18next'
-import { useEffect, useState } from 'react';
+import { useState } from 'react';
 import dynamic from 'next/dynamic';
 
 import getLocaleProps from "@/utils/getLocaleProps";
 import styles from '@/styles/Home.module.scss'
+import Swiper from '@/components/Swiper';
 
 const Mask = dynamic(() => import('antd-mobile').then(mod => mod.Mask), { ssr: false });
-// const Swiper = dynamic(() => import('antd-mobile').then(mod => mod.Swiper), { ssr: false });
-// const SwiperItem = dynamic(() => import('antd-mobile').then(mod => mod.Swiper.Item), { ssr: false });
 
 export default function Home() {
   const { t } = useTranslation('common', { keyPrefix: "home" })
   const [selectedOrigin, setSelectedOrigin] = useState<string>('yuxi');
   const [visible, setVisible] = useState(false)
+
+
 
   return (
     <div className={styles.home}>
@@ -350,13 +351,7 @@ export default function Home() {
         <div className={styles.home_enterprise_des}>
           {t('enterpriseDes')}
         </div>
-        {/* <Swiper slideSize={80} trackOffset={10} stuckAtBoundary={false}>
-          <Swiper.Item>
-            <div className={styles.content} style={{ background: 'red', width: '400px', height: '200px' }}>
-              {1}
-            </div>
-          </Swiper.Item>
-        </Swiper> */}
+        <Swiper />
       </div>
 
       <div className={styles.home_block}>
@@ -385,7 +380,7 @@ export default function Home() {
 
       <div className={styles.home_footer}>
         <div className={styles.home_footer_logo_box}>
-          <Image className={styles.home_footer_logo} src='/favicon.png' alt='logo' width={42} height={49} />
+          <Image className={styles.home_footer_logo} src='/icons/logo.png' alt='logo' width={42} height={49} />
         </div>
         <div className={styles.home_footer_company}>
           {t('footerCompany')}

@@ -84,7 +84,7 @@ const Header = (props: Props) => {
             <div className={styles.header_box}>
                 <div className={styles.header}>
                     <Image
-                        src="/favicon.png"
+                        src="/icons/logo.png"
                         alt="RWA OLIVE OIL"
                         width={42}
                         height={49}

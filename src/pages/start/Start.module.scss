@@ -6,7 +6,6 @@
     width: 100%;
     height: 68vh;
     background: url('/images/bgi.png') no-repeat 100% bottom;
-    // border: 1px solid #000000;
 
     .start_page_logo {
       width: 320px;
@@ -56,6 +55,16 @@
       vertical-align: middle;
       margin-top: 42px;
       color: #202020;
+    }
+  }
+}
+
+@media screen and (min-width:459px) {
+  .start_page {
+
+    .start_page_bg {
+      height: 200vh;
+      background: url('/images/bgi.png') no-repeat center bottom / cover;
     }
   }
 }

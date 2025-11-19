@@ -19,7 +19,7 @@ export default function Home() {
     <div className={styles.start_page}>
       <div className={styles.start_page_bg}>
         <Image
-          src="/favicon.png"
+          src="/icons/logo.png"
           alt="RWA OLIVE OIL"
           width={520}
           height={126}
