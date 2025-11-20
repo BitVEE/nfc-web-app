@@ -14,7 +14,7 @@ function App({ Component, pageProps }: AppProps) {
     <>
       <Head>
         <title>RWA OLIVE OIL</title>
-        <meta name="description" content="" />
+        <meta name="description" content="Blockchain Traceability & Asset Tokenization Platform" />
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no"></meta>
         <meta name="keywords" content="rwa olive oil"></meta>
         <link rel="icon" href="/favicon.png" />
