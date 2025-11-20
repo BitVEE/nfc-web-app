@@ -5,7 +5,7 @@
   .home_olive {
     width: 100%;
     min-height: 2550px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.45) 100%), url('/images/home-olive.jpg');
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.45) 100%), url('/images/home-olive.jpg');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;
@@ -78,9 +78,7 @@
       font-style: SemiBold;
       border-radius: 36px;
       font-size: 50px;
-      line-height: 21px;
       letter-spacing: -0.32%;
-      vertical-align: middle;
       color: #202020;
       background-color: #DDDDDD;
       display: flex;
