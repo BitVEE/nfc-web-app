@@ -94,10 +94,10 @@ const Header = (props: Props) => {
                     />
                     <div className={styles.title_box}>
                         <div className={styles.title}>
-                            Caiyunzhilan Olive Oil
+                            {t('herderCompany')}
                         </div>
                         <div className={styles.subtitle}>
-                            Blockchain Traceability & Asset Tokenization Platform
+                            {t('herderDes')}
                         </div>
                     </div>
                     <Image
@@ -116,7 +116,7 @@ const Header = (props: Props) => {
                 bodyStyle={{ height: '100vh' }}
             >
                 <div style={popupStyle}>
-                    <div style={ width && width > 768 ? popupPCTitleStyle : popupTitleStyle}>
+                    <div style={width && width > 768 ? popupPCTitleStyle : popupTitleStyle}>
                         语言 language
                     </div>
                     <div style={popupDesBoxStyle}>

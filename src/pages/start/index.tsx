@@ -34,7 +34,7 @@ export default function Home() {
         <div className={styles.start_btn} onClick={() => id ? router.push('/verify?id=' + id) : alert(t('scanNFC'))}>{t('start')}</div>
         <div className={styles.copyright}>
           <div onClick={() => router.push('/')}>{t('about') + ' ' + t('companyName')} </div>
-          <div>© 2025 Caiyunzhinan All Rights Reserved</div>
+          <div>© 2025 Caiyunzhilan All Rights Reserved</div>
         </div>
       </div>
 

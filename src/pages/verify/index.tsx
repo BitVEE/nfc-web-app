@@ -130,7 +130,7 @@ const Verify = (props: Props) => {
                 <div className={styles.start_btn} onClick={() => (id && !isError ? router.push(`/certificte?id=${id}`) : null)}>{t(isError ? 'error' : 'check')}</div>
                 <div className={styles.copyright}>
                     <div onClick={() => router.push('/')}>{t('about') + ' ' + t('companyName')} </div>
-                    <div>© 2025 Caiyunzhinan All Rights Reserved</div>
+                    <div>© 2025 Caiyunzhilan All Rights Reserved</div>
                 </div>
             </div>
         </div>
