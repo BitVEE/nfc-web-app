@@ -408,7 +408,7 @@ export default function Home() {
 
       <Mask visible={visible} onMaskClick={() => setVisible(false)} color='#202020E5'>
         <div className={styles.overlayContent}>
-          <Image className={styles.overlayContent_img} src='/images/tree-img.png' alt='orchards' width={300} height={400} />
+          <Image className={styles.overlayContent_img} src='/images/tree-img.svg' alt='orchards' width={300} height={400} />
           <div className={styles.overlayContent_form}>
             <div className={styles.overlayContent_form_title}>
               {t('orchardsCardUnit1')}
